@@ -1,0 +1,30 @@
+{
+  "timestamp": "2025-12-08T18:26:34.905986",
+  "farm": {
+    "district": "Ahmednagar",
+    "crop": "Rice",
+    "season": "Kharif",
+    "year": 2025,
+    "area": 10.0
+  },
+  "weather": {
+    "rain_total": 567.34,
+    "rain_days": 94,
+    "temp_mean": 24.165573770491804,
+    "temp_max": 35.53,
+    "heat_days": 1,
+    "humidity_mean": 79.36825136612022
+  },
+  "prediction": {
+    "yield_pred": 1667.4178828008924,
+    "yield_low": 1375.1552053835426,
+    "yield_high": 1959.6805602182421,
+    "confidence": 0.82
+  },
+  "threshold": 1500.0,
+  "pmfby": {
+    "shortfall": 0,
+    "loss_percentage": 0,
+    "claim_trigger": false
+  }
+}

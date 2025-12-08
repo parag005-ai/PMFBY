@@ -1,0 +1,361 @@
+ <table border="2px" id="apyreport" class="table table-hover table-bordered text-center">
+        <thead>
+          <tr>
+            <!-- th rowspan="2">S.No.</th -->
+
+            <th rowspan="2">State/Crop/District</th>
+            <th rowspan="2">Season</th>
+                  				<th colspan="3">2019 - 2020</th><th colspan="3">2020 - 2021</th><th colspan="3">2021 - 2022</th><th colspan="3">2022 - 2023</th>      			
+          </tr>
+          <tr>
+    			    				<th count="1">Area <br>(Hectare)</th><th count="1">Production <br> (Tonnes)</th><th count="1">Yield <br> (Ton./Ha.)</th><th count="2">Area <br>(Hectare)</th><th count="2">Production <br> (Tonnes)</th><th count="2">Yield <br> (Ton./Ha.)</th><th count="3">Area <br>(Hectare)</th><th count="3">Production <br> (Tonnes)</th><th count="3">Yield <br> (Ton./Ha.)</th><th count="4">Area <br>(Hectare)</th><th count="4">Production <br> (Tonnes)</th><th count="4">Yield <br> (Ton./Ha.)</th>    			    			</tr>
+        </thead>
+        <tbody>
+                  <tr>
+
+        <th>Maharashtra</th>
+        <td></td>
+                <td></td>
+        <td></td>
+        <td></td>
+              <td></td>
+        <td></td>
+        <td></td>
+              <td></td>
+        <td></td>
+        <td></td>
+              <td></td>
+        <td></td>
+        <td></td>
+            </tr>
+                  <tr>
+          <th>1. Cotton(lint)</th>
+          <td></td>
+                    <td>
+
+          </td>
+          <td><b>
+            Bales</b>
+          </td>
+          <td><b>
+            Bales/Hectare</b>
+          </td>
+                  <td>
+
+          </td>
+          <td><b>
+            Bales</b>
+          </td>
+          <td><b>
+            Bales/Hectare</b>
+          </td>
+                  <td>
+
+          </td>
+          <td><b>
+            Bales</b>
+          </td>
+          <td><b>
+            Bales/Hectare</b>
+          </td>
+                  <td>
+
+          </td>
+          <td><b>
+            Bales</b>
+          </td>
+          <td><b>
+            Bales/Hectare</b>
+          </td>
+                </tr>
+                      <tr>
+            <td rowspan="1">1. Ahilyanagar</td>
+            <td>Kharif</td>
+                        <td>
+              159250            </td>
+            <td>
+              146932            </td>
+            <td>
+              0.92            </td>
+                      <td>
+              172800            </td>
+            <td>
+              399500            </td>
+            <td>
+              2.31            </td>
+                      <td>
+              162600            </td>
+            <td>
+              277400            </td>
+            <td>
+              1.71            </td>
+                      <td>
+              131229.17            </td>
+            <td>
+              255061.860            </td>
+            <td>
+              1.94            </td>
+                    </tr>
+                  <tr>
+
+      <td><b>Total (Cotton(lint))</b></td>
+      <td>&nbsp;</td>
+      
+      <td><b>
+        159250        </b>
+      </td>
+      <td><b>
+        146932        </b>
+      </td>
+      <td><b>0.92      </b>
+      </td>
+    
+      <td><b>
+        172800        </b>
+      </td>
+      <td><b>
+        399500        </b>
+      </td>
+      <td><b>2.31      </b>
+      </td>
+    
+      <td><b>
+        162600        </b>
+      </td>
+      <td><b>
+        277400        </b>
+      </td>
+      <td><b>1.71      </b>
+      </td>
+    
+      <td><b>
+        131229.17        </b>
+      </td>
+      <td><b>
+        255061.860        </b>
+      </td>
+      <td><b>1.94      </b>
+      </td>
+        </tr>
+          <tr>
+          <th>2. Rice</th>
+          <td></td>
+                    <td>
+
+          </td>
+          <td><b>
+            </b>
+          </td>
+          <td><b>
+            </b>
+          </td>
+                  <td>
+
+          </td>
+          <td><b>
+            </b>
+          </td>
+          <td><b>
+            </b>
+          </td>
+                  <td>
+
+          </td>
+          <td><b>
+            </b>
+          </td>
+          <td><b>
+            </b>
+          </td>
+                  <td>
+
+          </td>
+          <td><b>
+            </b>
+          </td>
+          <td><b>
+            </b>
+          </td>
+                </tr>
+                      <tr>
+            <td rowspan="1">1. Ahilyanagar</td>
+            <td>Kharif</td>
+                        <td>
+              17331            </td>
+            <td>
+              19469            </td>
+            <td>
+              1.12            </td>
+                      <td>
+              17595.34            </td>
+            <td>
+              33172.49            </td>
+            <td>
+              1.89            </td>
+                      <td>
+              19551.469            </td>
+            <td>
+              37007.021            </td>
+            <td>
+              1.89            </td>
+                      <td>
+              20579.65            </td>
+            <td>
+              34228.07            </td>
+            <td>
+              1.66            </td>
+                    </tr>
+                  <tr>
+
+      <td><b>Total (Rice)</b></td>
+      <td>&nbsp;</td>
+      
+      <td><b>
+        17331        </b>
+      </td>
+      <td><b>
+        19469        </b>
+      </td>
+      <td><b>1.12      </b>
+      </td>
+    
+      <td><b>
+        17595.34        </b>
+      </td>
+      <td><b>
+        33172.49        </b>
+      </td>
+      <td><b>1.89      </b>
+      </td>
+    
+      <td><b>
+        19551.469        </b>
+      </td>
+      <td><b>
+        37007.021        </b>
+      </td>
+      <td><b>1.89      </b>
+      </td>
+    
+      <td><b>
+        20579.65        </b>
+      </td>
+      <td><b>
+        34228.07        </b>
+      </td>
+      <td><b>1.66      </b>
+      </td>
+        </tr>
+          <tr>
+          <th>3. Soyabean</th>
+          <td></td>
+                    <td>
+
+          </td>
+          <td><b>
+            </b>
+          </td>
+          <td><b>
+            </b>
+          </td>
+                  <td>
+
+          </td>
+          <td><b>
+            </b>
+          </td>
+          <td><b>
+            </b>
+          </td>
+                  <td>
+
+          </td>
+          <td><b>
+            </b>
+          </td>
+          <td><b>
+            </b>
+          </td>
+                  <td>
+
+          </td>
+          <td><b>
+            </b>
+          </td>
+          <td><b>
+            </b>
+          </td>
+                </tr>
+                      <tr>
+            <td rowspan="1">1. Ahilyanagar</td>
+            <td>Kharif</td>
+                        <td>
+              70951            </td>
+            <td>
+              40505            </td>
+            <td>
+              0.57            </td>
+                      <td>
+              84480.32            </td>
+            <td>
+              141300.37            </td>
+            <td>
+              1.67            </td>
+                      <td>
+              99300.032            </td>
+            <td>
+              157052.931            </td>
+            <td>
+              1.58            </td>
+                      <td>
+              110629            </td>
+            <td>
+              200692            </td>
+            <td>
+              1.81            </td>
+                    </tr>
+                  <tr>
+
+      <td><b>Total (Soyabean)</b></td>
+      <td>&nbsp;</td>
+      
+      <td><b>
+        70951        </b>
+      </td>
+      <td><b>
+        40505        </b>
+      </td>
+      <td><b>0.57      </b>
+      </td>
+    
+      <td><b>
+        84480.32        </b>
+      </td>
+      <td><b>
+        141300.37        </b>
+      </td>
+      <td><b>1.67      </b>
+      </td>
+    
+      <td><b>
+        99300.032        </b>
+      </td>
+      <td><b>
+        157052.931        </b>
+      </td>
+      <td><b>1.58      </b>
+      </td>
+    
+      <td><b>
+        110629        </b>
+      </td>
+      <td><b>
+        200692        </b>
+      </td>
+      <td><b>1.81      </b>
+      </td>
+        </tr>
+
+
+        </tbody>
+      </table>

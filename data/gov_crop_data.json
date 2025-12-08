@@ -1,0 +1,165 @@
+{
+    "index_name": "35be999b-0208-4354-b557-f6ca9a5355de",
+    "title": "District-wise, season-wise crop production statistics from 1997",
+    "desc": "District-wise, season-wise crop production statistics from 1997",
+    "org_type": "Central",
+    "org": [
+        "Ministry of Agriculture and Farmers Welfare",
+        "Department of Agriculture and Farmers Welfare"
+    ],
+    "sector": [
+        "Agriculture",
+        "Agricultural Produces"
+    ],
+    "source": "data.gov.in",
+    "catalog_uuid": "f4435c3b-96be-4002-9839-aa3897dc732b",
+    "visualizable": "1",
+    "active": "1",
+    "created": 1626169739,
+    "updated": 1626171606,
+    "created_date": "2021-07-13T11:48:59Z",
+    "updated_date": "2021-07-13T15:50:06Z",
+    "external_ws": 0,
+    "external_ws_url": "",
+    "target_bucket": {
+        "index": "api",
+        "type": "f4435c3b-96be-4002-9839-aa3897dc732b",
+        "field": "35be999b-0208-4354-b557-f6ca9a5355de"
+    },
+    "field": [
+        {
+            "id": "state_name",
+            "name": "State_Name",
+            "type": "keyword"
+        },
+        {
+            "id": "district_name",
+            "name": "District_Name",
+            "type": "keyword"
+        },
+        {
+            "id": "crop_year",
+            "name": "Crop_Year",
+            "type": "double"
+        },
+        {
+            "id": "season",
+            "name": "Season",
+            "type": "keyword"
+        },
+        {
+            "id": "crop",
+            "name": "Crop",
+            "type": "keyword"
+        },
+        {
+            "id": "area_",
+            "name": "Area",
+            "type": "double"
+        },
+        {
+            "id": "production_",
+            "name": "Production",
+            "type": "double"
+        }
+    ],
+    "message": "Resource lists",
+    "version": "2.2.0",
+    "status": "ok",
+    "total": 246091,
+    "count": 10,
+    "limit": 10,
+    "offset": "0",
+    "records": [
+        {
+            "state_name": "Andaman and Nicobar Islands",
+            "district_name": "NICOBARS",
+            "crop_year": 2000,
+            "season": "Kharif",
+            "crop": "Arecanut",
+            "area_": 1254,
+            "production_": 2000
+        },
+        {
+            "state_name": "Andaman and Nicobar Islands",
+            "district_name": "NICOBARS",
+            "crop_year": 2000,
+            "season": "Kharif",
+            "crop": "Other Kharif pulses",
+            "area_": 2,
+            "production_": 1
+        },
+        {
+            "state_name": "Andaman and Nicobar Islands",
+            "district_name": "NICOBARS",
+            "crop_year": 2000,
+            "season": "Kharif",
+            "crop": "Rice",
+            "area_": 102,
+            "production_": 321
+        },
+        {
+            "state_name": "Andaman and Nicobar Islands",
+            "district_name": "NICOBARS",
+            "crop_year": 2000,
+            "season": "Whole Year",
+            "crop": "Banana",
+            "area_": 176,
+            "production_": 641
+        },
+        {
+            "state_name": "Andaman and Nicobar Islands",
+            "district_name": "NICOBARS",
+            "crop_year": 2000,
+            "season": "Whole Year",
+            "crop": "Cashewnut",
+            "area_": 720,
+            "production_": 165
+        },
+        {
+            "state_name": "Andaman and Nicobar Islands",
+            "district_name": "NICOBARS",
+            "crop_year": 2000,
+            "season": "Whole Year",
+            "crop": "Coconut",
+            "area_": 18168,
+            "production_": 65100000
+        },
+        {
+            "state_name": "Andaman and Nicobar Islands",
+            "district_name": "NICOBARS",
+            "crop_year": 2000,
+            "season": "Whole Year",
+            "crop": "Dry ginger",
+            "area_": 36,
+            "production_": 100
+        },
+        {
+            "state_name": "Andaman and Nicobar Islands",
+            "district_name": "NICOBARS",
+            "crop_year": 2000,
+            "season": "Whole Year",
+            "crop": "Sugarcane",
+            "area_": 1,
+            "production_": 2
+        },
+        {
+            "state_name": "Andaman and Nicobar Islands",
+            "district_name": "NICOBARS",
+            "crop_year": 2000,
+            "season": "Whole Year",
+            "crop": "Sweet potato",
+            "area_": 5,
+            "production_": 15
+        },
+        {
+            "state_name": "Andaman and Nicobar Islands",
+            "district_name": "NICOBARS",
+            "crop_year": 2000,
+            "season": "Whole Year",
+            "crop": "Tapioca",
+            "area_": 40,
+            "production_": 169
+        }
+    ]
+}

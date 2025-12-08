@@ -1,0 +1,9 @@
+State/Crop/District,Season,2019 - 2020,2019 - 2020,2019 - 2020,2020 - 2021,2020 - 2021,2020 - 2021,2021 - 2022,2021 - 2022,2021 - 2022,2022 - 2023,2022 - 2023,2022 - 2023
+State/Crop/District,Season,Area (Hectare),Production (Tonnes),Yield (Ton./Ha.),Area (Hectare),Production (Tonnes),Yield (Ton./Ha.),Area (Hectare),Production (Tonnes),Yield (Ton./Ha.),Area (Hectare),Production (Tonnes),Yield (Ton./Ha.)
+Haryana,,,,,,,,,,,,,
+1. Cotton(lint),,,Bales,Bales/Hectare,,Bales,Bales/Hectare,,Bales,Bales/Hectare,,Bales,Bales/Hectare
+1. Faridabad,Kharif,700.0,2100,3.00,66400.0,248.41,0.00,780.0,2800,3.59,380.0,760,2.00
+Total (Cotton(lint)),,700.0,2100,3,66400.0,248.41,0,780.0,2800,3.59,380.0,760,2
+2. Rice,,,,,,,,,,,,,
+1. Faridabad,Kharif,16900.0,42400,2.51,14800.0,38700,2.61,14913.0,33080,2.22,16260.0,43230,2.66
+Total (Rice),,16900.0,42400,2.51,14800.0,38700,2.61,14913.0,33080,2.22,16260.0,43230,2.66

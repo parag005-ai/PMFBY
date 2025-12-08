@@ -1,0 +1,23 @@
+state,district,crop,season,year,area,production,yield
+Haryana,Karnal,Rice,Kharif,2023,145000,522000,3600.0
+Haryana,Karnal,Rice,Kharif,2022,143000,486200,3400.0
+Haryana,Karnal,Rice,Kharif,2021,140000,504000,3600.0
+Haryana,Karnal,Rice,Kharif,2020,138000,455400,3300.0
+Haryana,Karnal,Rice,Kharif,2019,141000,507600,3600.0
+Haryana,Karnal,Rice,Kharif,2018,139000,445600,3205.76
+Haryana,Karnal,Rice,Kharif,2017,136000,489600,3600.0
+Haryana,Karnal,Wheat,Rabi,2023,160000,832000,5200.0
+Haryana,Karnal,Wheat,Rabi,2022,158000,789000,4993.67
+Haryana,Karnal,Wheat,Rabi,2021,155000,806000,5200.0
+Haryana,Karnal,Wheat,Rabi,2020,152000,760000,5000.0
+Haryana,Karnal,Wheat,Rabi,2019,150000,780000,5200.0
+Punjab,Ludhiana,Rice,Kharif,2023,250000,1050000,4200.0
+Punjab,Ludhiana,Rice,Kharif,2022,248000,992000,4000.0
+Punjab,Ludhiana,Rice,Kharif,2021,245000,1029000,4200.0
+Punjab,Ludhiana,Rice,Kharif,2020,242000,944000,3900.83
+Punjab,Ludhiana,Rice,Kharif,2019,240000,1008000,4200.0
+Madhya Pradesh,Indore,Soybean,Kharif,2023,180000,234000,1300.0
+Madhya Pradesh,Indore,Soybean,Kharif,2022,175000,192500,1100.0
+Madhya Pradesh,Indore,Soybean,Kharif,2021,170000,221000,1300.0
+Madhya Pradesh,Indore,Soybean,Kharif,2020,168000,151200,900.0
+Madhya Pradesh,Indore,Soybean,Kharif,2019,165000,206250,1250.0

@@ -1,0 +1,7 @@
+State,District,Year,Cotton(lint),Cotton(lint),Cotton(lint),Rice,Rice,Rice,Soyabean,Soyabean,Soyabean
+State,District,Year,Kharif,Kharif,Kharif,Kharif,Kharif,Kharif,Kharif,Kharif,Kharif
+State,District,Year,Area (Hectare),Production (Bales),Yield (Bales/Hectare),Area (Hectare),Production (Tonnes),Yield (Tonne/Hectare),Area (Hectare),Production (Tonnes),Yield (Tonne/Hectare)
+1. Maharashtra,1. Ahilyanagar,2019 - 2020,159250.0,146932.0,0.92,17331.0,19469.0,1.12,70951.0,40505.0,0.57
+1. Maharashtra,1. Ahilyanagar,2020 - 2021,172800.0,399500.0,2.31,17595.34,33172.49,1.89,84480.32,141300.37,1.67
+1. Maharashtra,1. Ahilyanagar,2021 - 2022,162600.0,277400.0,1.71,19551.47,37007.02,1.89,99300.03,157052.93,1.58
+1. Maharashtra,1. Ahilyanagar,2022 - 2023,131229.17,255061.86,1.94,20579.65,34228.07,1.66,110629.0,200692.0,1.81

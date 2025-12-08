@@ -1,0 +1,44 @@
+{
+  "claim_id": "OFFICIAL_TEST_001",
+  "steps": {
+    "official_threshold": {
+      "average_yield": 3480,
+      "indemnity_level": 80,
+      "threshold_yield": 2784.0,
+      "source": "District data (Karnal)",
+      "data_year": "2018-2023 (5-year average)",
+      "units": "kg/ha"
+    },
+    "satellite": {
+      "observations": 12,
+      "source": "Google Earth Engine"
+    },
+    "weather": {
+      "days": 154,
+      "source": "NASA POWER API"
+    },
+    "soil": {
+      "type": "Alluvial",
+      "source": "ICAR"
+    },
+    "prediction": {
+      "yield_pred": 3905.08,
+      "yield_low_10": 3319.31,
+      "yield_high_90": 4490.84,
+      "confidence_score": 0.7,
+      "model_type": "empirical",
+      "units": "kg/ha"
+    },
+    "pmfby": {
+      "threshold_yield": 2784.0,
+      "predicted_yield": 3905.08,
+      "shortfall_kg_ha": 0,
+      "loss_percentage": 0.0,
+      "claim_trigger": false,
+      "trigger_threshold": 33.0,
+      "threshold_source": "Official (DES/State Data)",
+      "data_year": "2018-2023 (5-year average)"
+    }
+  },
+  "report_path": "output\\OFFICIAL_TEST_001\\PMFBY_Report_OFFICIAL_TEST_001_20251208_151742.pdf"
+}

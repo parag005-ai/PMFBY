@@ -1,0 +1,10 @@
+organisation,Ministry of Agriculture and Farmers Welfare
+sectors,"Agriculture and Allied"
+updated_frequency,Yearly
+granularity,"Year, State, District, Crop Season, Crop"
+time_saved,2.5 hours
+source,"Directorate of Economics and Statistics, Ministry of Agriculture and Farmers Welfare"
+source_link,"https://data.desagri.gov.in/website/crops-apy-report-web"
+time_period,"1997-98 to 2022-23"
+units,"area in Hectare, production in Tonne, yield in Tonne per Hectare"
+citation,"Ministry of Agriculture and Farmers Welfare. District, Season and Crop wise Area, Production and Yield Statistics for Maharashtra [Data set]. Dataful. https://dataful.in/dataset/5632"

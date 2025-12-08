@@ -1,0 +1,78 @@
+{
+  "claim_id": "REAL_TEST_001",
+  "steps": {
+    "satellite": {
+      "observations": 12,
+      "source": "GEE"
+    },
+    "weather": {
+      "days": 154
+    },
+    "soil": {
+      "district": "Karnal",
+      "crop": "rice",
+      "soil_type": "Alluvial",
+      "texture": "Loamy",
+      "suitability_score": 65,
+      "suitability_class": "MODERATELY SUITABLE",
+      "limitations": [
+        "Soil too alkaline (pH 7.8 > 7.5)",
+        "Non-ideal texture: Loamy",
+        "Soil drains too quickly for this crop"
+      ],
+      "recommendations": [
+        "Apply gypsum or sulfur to reduce pH",
+        "Use bunding/leveling for water retention"
+      ],
+      "soil_properties": {
+        "ph": 7.8,
+        "organic_carbon": 0.52,
+        "nitrogen": 185,
+        "phosphorus": 22,
+        "potassium": 280,
+        "water_holding": 45,
+        "drainage": "good"
+      }
+    },
+    "phenology": {
+      "peak_ndvi": 0.35415955256779935,
+      "peak_date": "2024-06-17T00:00:00",
+      "peak_doy": 169,
+      "sos_date": "2024-06-17T00:00:00",
+      "eos_date": "2024-10-30T00:00:00",
+      "season_length_days": 45,
+      "greenup_rate": 0.0,
+      "senescence_rate": 0.00342359795647714,
+      "ndvi_auc": 10.3980389911158,
+      "ndvi_mean": 0.1918937703631388,
+      "ndvi_std": 0.06271074884184469,
+      "ndvi_min": 0.0920753397012116,
+      "ndvi_max": 0.35415955256779935
+    },
+    "stress": {
+      "overall": {
+        "weighted_average_stress": 0.0,
+        "total_high_stress_days": 0,
+        "most_stressed_stage": "vegetative"
+      },
+      "explanation": "No significant stress events detected during the crop season."
+    },
+    "prediction": {
+      "yield_pred": 3905.08,
+      "yield_low_10": 3319.31,
+      "yield_high_90": 4490.84,
+      "confidence_score": 0.7,
+      "model_type": "empirical",
+      "units": "kg/ha"
+    },
+    "pmfby": {
+      "threshold_yield": 3200,
+      "predicted_yield": 3905.08,
+      "shortfall_kg_ha": 0,
+      "loss_percentage": 0.0,
+      "claim_trigger": false,
+      "trigger_threshold": 33.0
+    }
+  },
+  "report_path": "output\\REAL_TEST_001\\PMFBY_Report_REAL_TEST_001_20251208_144757.pdf"
+}

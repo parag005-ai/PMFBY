@@ -1,0 +1,155 @@
+# PMFBY Yield Prediction Engine Configuration
+
+# Engine Settings
+engine:
+  name: "PMFBY AI Yield Prediction Engine"
+  version: "1.0.0"
+  environment: "development"  # development, staging, production
+
+# Supported Crops
+crops:
+  - name: "rice"
+    season: "kharif"
+    gdd_base: 10
+    gdd_max: 30
+    cycle_days: 130
+    threshold_yield_default: 2500  # kg/ha
+  - name: "wheat"
+    season: "rabi"
+    gdd_base: 4
+    gdd_max: 26
+    cycle_days: 140
+    threshold_yield_default: 3200
+  - name: "cotton"
+    season: "kharif"
+    gdd_base: 15
+    gdd_max: 38
+    cycle_days: 180
+    threshold_yield_default: 500
+  - name: "soybean"
+    season: "kharif"
+    gdd_base: 10
+    gdd_max: 30
+    cycle_days: 110
+    threshold_yield_default: 1200
+  - name: "maize"
+    season: "kharif"
+    gdd_base: 10
+    gdd_max: 30
+    cycle_days: 120
+    threshold_yield_default: 2800
+
+# Phenology Stages (days after sowing)
+phenology:
+  rice:
+    vegetative: [0, 30]
+    tillering: [30, 55]
+    flowering: [55, 80]
+    grain_filling: [80, 105]
+    maturity: [105, 130]
+  wheat:
+    vegetative: [0, 35]
+    tillering: [35, 60]
+    flowering: [60, 90]
+    grain_filling: [90, 115]
+    maturity: [115, 140]
+  cotton:
+    vegetative: [0, 45]
+    squaring: [45, 70]
+    flowering: [70, 110]
+    boll_development: [110, 150]
+    maturity: [150, 180]
+  soybean:
+    vegetative: [0, 30]
+    flowering: [30, 55]
+    pod_development: [55, 80]
+    seed_filling: [80, 100]
+    maturity: [100, 110]
+  maize:
+    vegetative: [0, 35]
+    tasseling: [35, 55]
+    silking: [55, 70]
+    grain_filling: [70, 100]
+    maturity: [100, 120]
+
+# Satellite Data Settings
+sentinel2:
+  collection: "COPERNICUS/S2_SR_HARMONIZED"
+  bands:
+    - B2   # Blue
+    - B3   # Green
+    - B4   # Red
+    - B8   # NIR
+    - B11  # SWIR1
+    - B12  # SWIR2
+    - SCL  # Scene Classification
+  cloud_threshold: 20  # max cloud %
+  revisit_days: 5
+
+sentinel1:
+  collection: "COPERNICUS/S1_GRD"
+  bands:
+    - VV
+    - VH
+  orbit: "DESCENDING"
+  instrument_mode: "IW"
+
+# Weather API Configuration
+weather:
+  primary_source: "nasa_power"
+  nasa_power:
+    base_url: "https://power.larc.nasa.gov/api/temporal/daily/point"
+    parameters:
+      - T2M_MAX      # Max temperature
+      - T2M_MIN      # Min temperature
+      - PRECTOTCORR  # Rainfall
+      - ALLSKY_SFC_SW_DWN  # Solar radiation
+      - WS2M         # Wind speed
+      - RH2M         # Humidity
+  backup_source: "merra2"
+
+# Stress Thresholds
+stress_thresholds:
+  heat_stress:
+    temp_max_critical: 35  # °C
+    consecutive_days: 3
+  drought_stress:
+    ndwi_threshold: -0.1
+    rainfall_deficit_mm: -50
+  moisture_stress:
+    vpd_critical: 2.5  # kPa
+
+# Model Configuration
+model:
+  architecture: "transformer"
+  input_sequence_length: 36  # timesteps
+  features_per_timestep: 12
+  hidden_dim: 256
+  num_heads: 8
+  num_layers: 4
+  dropout: 0.2
+  uncertainty:
+    mc_dropout_samples: 50
+    ensemble_size: 5
+
+# Aggregation Settings
+aggregation:
+  pixel_stats: ["median", "mean", "std", "p25", "p75"]
+  farm_to_village: "area_weighted"
+  minimum_valid_pixels: 10
+
+# Output Paths
+paths:
+  output_dir: "output"
+  models_dir: "trained_models"
+  reports_dir: "reports"
+  logs_dir: "logs"
+
+# Database Configuration
+database:
+  type: "postgresql"
+  host: "localhost"
+  port: 5432
+  name: "pmfby_yield"
+  user: "postgres"
+  password_env: "PMFBY_DB_PASSWORD"

@@ -1,0 +1,233 @@
+[
+  {
+    "district": "Faridabad",
+    "state": "Haryana",
+    "crop": "rice",
+    "features": {
+      "ndvi_peak": 0.31103573140620405,
+      "ndvi_mean": 0.24118021010435373,
+      "ndvi_min": 0.1494689888861904,
+      "ndvi_std": 0.054636493950041866,
+      "ndvi_auc": 13.718476645684426,
+      "season_length": 45,
+      "greenup_rate": 0.01109900013371582,
+      "senescence_rate": 0.0032004651037296993,
+      "rain_total": 760.15,
+      "temp_mean": 28.436510067114092,
+      "temp_max": 43.97,
+      "gdd_total": 2548.605,
+      "heat_days": 32,
+      "vpd_mean": 1.081182963798163,
+      "heat_stress_mean": 0.0,
+      "moisture_stress_mean": 0.15,
+      "combined_stress_mean": 0.0,
+      "high_stress_days": 0,
+      "most_stressed_stage": "vegetative",
+      "soil_ph": 7.5,
+      "soil_organic_carbon": 0.45,
+      "soil_nitrogen": 170,
+      "soil_water_holding": 40
+    },
+    "data_sources": {
+      "threshold": "DES Official (data.desagri.gov.in)",
+      "satellite": "Google Earth Engine",
+      "weather": "NASA POWER API",
+      "soil": "ICAR"
+    },
+    "threshold": {
+      "status": "success",
+      "state": "Haryana",
+      "district": "Faridabad",
+      "crop": "rice",
+      "source": "DES Official Data (data.desagri.gov.in)",
+      "years": [
+        "2019-20",
+        "2020-21",
+        "2021-22",
+        "2022-23"
+      ],
+      "yields_kg_ha": [
+        "2510",
+        "2610",
+        "2220",
+        "2660"
+      ],
+      "average_yield": 2500.0,
+      "indemnity_level": 80,
+      "threshold_yield": 2000.0,
+      "units": "kg/ha",
+      "authenticity": "100% Official Government Data"
+    },
+    "prediction": {
+      "yield_pred": 3907.74,
+      "yield_low_10": 3321.58,
+      "yield_high_90": 4493.9,
+      "confidence_score": 0.7,
+      "model_type": "empirical",
+      "units": "kg/ha"
+    },
+    "pmfby": {
+      "threshold_yield": 2000.0,
+      "predicted_yield": 3907.74,
+      "shortfall_kg_ha": 0,
+      "loss_percentage": 0.0,
+      "claim_trigger": "False",
+      "trigger_threshold": 33.0
+    },
+    "stress_explanation": "No significant stress events detected during the crop season."
+  },
+  {
+    "district": "Ahmednagar",
+    "state": "Maharashtra",
+    "crop": "soybean",
+    "features": {
+      "ndvi_peak": 0.38341466355639386,
+      "ndvi_mean": 0.27378381567296595,
+      "ndvi_min": 0.2140530745129738,
+      "ndvi_std": 0.06341271240327793,
+      "ndvi_auc": 5.350926046650729,
+      "season_length": 20,
+      "greenup_rate": 0.0,
+      "senescence_rate": 0.008468079452171002,
+      "rain_total": 803.95,
+      "temp_mean": 24.968125,
+      "temp_max": 33.52,
+      "gdd_total": 2212.4649999999997,
+      "heat_days": 0,
+      "vpd_mean": 0.6278909634074351,
+      "heat_stress_mean": 0.0,
+      "moisture_stress_mean": 0.15,
+      "combined_stress_mean": 0.0,
+      "high_stress_days": 0,
+      "most_stressed_stage": "vegetative",
+      "soil_ph": 7.9,
+      "soil_organic_carbon": 0.65,
+      "soil_nitrogen": 210,
+      "soil_water_holding": 40
+    },
+    "data_sources": {
+      "threshold": "DES Official (data.desagri.gov.in)",
+      "satellite": "Google Earth Engine",
+      "weather": "NASA POWER API",
+      "soil": "ICAR"
+    },
+    "threshold": {
+      "status": "success",
+      "state": "Maharashtra",
+      "district": "Ahmednagar",
+      "crop": "soybean",
+      "source": "DES Official Data (data.desagri.gov.in)",
+      "years": [
+        "2019-20",
+        "2020-21",
+        "2021-22",
+        "2022-23"
+      ],
+      "yields_kg_ha": [
+        "570",
+        "1670",
+        "1580",
+        "1810"
+      ],
+      "average_yield": 1408.0,
+      "indemnity_level": 80,
+      "threshold_yield": 1126.0,
+      "units": "kg/ha",
+      "authenticity": "100% Official Government Data"
+    },
+    "prediction": {
+      "yield_pred": 1441.76,
+      "yield_low_10": 1225.5,
+      "yield_high_90": 1658.03,
+      "confidence_score": 0.7,
+      "model_type": "empirical",
+      "units": "kg/ha"
+    },
+    "pmfby": {
+      "threshold_yield": 1126.0,
+      "predicted_yield": 1441.76,
+      "shortfall_kg_ha": 0,
+      "loss_percentage": 0.0,
+      "claim_trigger": "False",
+      "trigger_threshold": 33.0
+    },
+    "stress_explanation": "No significant stress events detected during the crop season."
+  },
+  {
+    "district": "Gwalior",
+    "state": "Madhya Pradesh",
+    "crop": "rice",
+    "features": {
+      "ndvi_peak": 0.4503361045369547,
+      "ndvi_mean": 0.3731012164381627,
+      "ndvi_min": 0.2299580000845729,
+      "ndvi_std": 0.05917556545030312,
+      "ndvi_auc": 15.38701867035909,
+      "season_length": 40,
+      "greenup_rate": 0.02203781044523818,
+      "senescence_rate": 0.003975989229274516,
+      "rain_total": 1017.09,
+      "temp_mean": 27.80448051948052,
+      "temp_max": 46.66,
+      "gdd_total": 2605.85,
+      "heat_days": 18,
+      "vpd_mean": 0.8808224198512754,
+      "heat_stress_mean": 0.0,
+      "moisture_stress_mean": 0.15,
+      "combined_stress_mean": 0.0,
+      "high_stress_days": 0,
+      "most_stressed_stage": "vegetative",
+      "soil_ph": 7.5,
+      "soil_organic_carbon": 0.45,
+      "soil_nitrogen": 170,
+      "soil_water_holding": 40
+    },
+    "data_sources": {
+      "threshold": "DES Official (data.desagri.gov.in)",
+      "satellite": "Google Earth Engine",
+      "weather": "NASA POWER API",
+      "soil": "ICAR"
+    },
+    "threshold": {
+      "status": "success",
+      "state": "Madhya Pradesh",
+      "district": "Gwalior",
+      "crop": "rice",
+      "source": "DES Official Data (data.desagri.gov.in)",
+      "years": [
+        "2019-20",
+        "2020-21",
+        "2021-22",
+        "2022-23"
+      ],
+      "yields_kg_ha": [
+        "3080",
+        "3080",
+        "2860",
+        "4440"
+      ],
+      "average_yield": 3365.0,
+      "indemnity_level": 80,
+      "threshold_yield": 2692.0,
+      "units": "kg/ha",
+      "authenticity": "100% Official Government Data"
+    },
+    "prediction": {
+      "yield_pred": 4497.64,
+      "yield_low_10": 3823.0,
+      "yield_high_90": 5172.29,
+      "confidence_score": 0.7,
+      "model_type": "empirical",
+      "units": "kg/ha"
+    },
+    "pmfby": {
+      "threshold_yield": 2692.0,
+      "predicted_yield": 4497.64,
+      "shortfall_kg_ha": 0,
+      "loss_percentage": 0.0,
+      "claim_trigger": "False",
+      "trigger_threshold": 33.0
+    },
+    "stress_explanation": "No significant stress events detected during the crop season."
+  }
+]
