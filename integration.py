@@ -227,7 +227,7 @@ def batch_predict(segmentation_results: list, threshold_yield: float) -> list:
 
 if __name__ == "__main__":
     print("="*70)
-    print("INTEGRATION TEST: Segmentation → PMFBY Prediction")
+    print("INTEGRATION TEST: Segmentation to PMFBY Prediction")
     print("="*70)
     
     # Mock segmentation output
