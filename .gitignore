@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb
+
+# Data files (too large for git)
+*.csv
+*.json
+*.pkl
+*.h5
+*.hdf5
+
+# Except small config files
+!config/*.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Cache
+data/weather_cache/
+output/
+
+# Model files (too large)
+models/trained/*.pkl
+!models/trained/.gitkeep
+
+# Temporary files
+temp/
+tmp/
