@@ -21,6 +21,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from feature_engineering.weather_features import fetch_and_compute_weather
 from feature_engineering.agronomic_stress import compute_all_stress_indices, CROP_PARAMS
+from feature_engineering.soil_features_fast import get_soil_properties, compute_soil_quality_index
 
 # Use v1 model (81.8% accuracy)
 MODEL_PATH = 'models/trained/yield_model_with_weather.pkl'
@@ -128,8 +129,18 @@ def run_unified_prediction(lat, lon, district, crop, season, area, threshold, ye
     print(f"    Combined Stress: {stress['combined_stress']:.2f}")
     print(f"    Yield Potential: {stress['yield_potential']:.2f}")
     
+    # Get soil properties (instant, no API call)
+    print("\n[4] Getting Soil Properties...")
+    soil = get_soil_properties(district)
+    soil_quality = compute_soil_quality_index(soil)
+    
+    print(f"    Soil Type: {soil['texture_class']}")
+    print(f"    Clay: {soil['clay_pct']:.1f}%, pH: {soil['ph']:.1f}")
+    print(f"    Organic Carbon: {soil['organic_carbon']:.2f}%")
+    print(f"    AWC: {soil['awc']:.3f}, Quality: {soil_quality:.2f}")
+    
     # Prepare v1 features
-    print("\n[4] Preparing Features...")
+    print("\n[5] Preparing Features...")
     try:
         district_enc = encoders['district'].transform([district])[0]
     except:
@@ -163,7 +174,7 @@ def run_unified_prediction(lat, lon, district, crop, season, area, threshold, ye
     ]])
     
     # Predict with uncertainty
-    print("\n[5] Predicting with Uncertainty...")
+    print("\n[6] Predicting with Uncertainty...")
     pred, uncertainty, conf_low, conf_high = predict_with_rf_uncertainty(model, X, mae)
     
     print(f"    Predicted: {pred:.0f} kg/ha")
@@ -171,12 +182,12 @@ def run_unified_prediction(lat, lon, district, crop, season, area, threshold, ye
     print(f"    95% CI: [{conf_low:.0f}, {conf_high:.0f}] kg/ha")
     
     # PMFBY with confidence
-    print("\n[6] PMFBY Assessment...")
+    print("\n[7] PMFBY Assessment...")
     pmfby = calculate_pmfby_with_confidence(pred, uncertainty, threshold)
     
     # Final output
     print("\n" + "=" * 70)
-    print(" PMFBY UNIFIED PREDICTION (v1 Accuracy + v2 Features)")
+    print(" PMFBY UNIFIED PREDICTION (v1 Accuracy + v2 Features + Soil)")
     print("=" * 70)
     print(f"""
     MODEL PERFORMANCE:
@@ -198,6 +209,14 @@ def run_unified_prediction(lat, lon, district, crop, season, area, threshold, ye
         Heat Stress Intensity: {weather['heat_stress_intensity']:.0f}
         VPD: {weather['vpd_mean']:.2f} kPa
         Water Balance: {weather['water_balance']:.0f} mm
+    
+    SOIL PROPERTIES:
+        Texture: {soil['texture_class']}
+        Clay: {soil['clay_pct']:.1f}%, Sand: {soil['sand_pct']:.1f}%
+        Organic Carbon: {soil['organic_carbon']:.2f}%
+        pH: {soil['ph']:.1f}
+        AWC: {soil['awc']:.3f} cm3/cm3
+        Quality Index: {soil_quality:.2f}
     
     AGRONOMIC STRESS (v2):
         Vegetative Stress: {stress['vegetative_stress']:.2%}
@@ -230,6 +249,8 @@ def run_unified_prediction(lat, lon, district, crop, season, area, threshold, ye
         'confidence_interval': (conf_low, conf_high),
         'weather': weather,
         'stress': stress,
+        'soil': soil,
+        'soil_quality': soil_quality,
         'pmfby': pmfby
     }
 
